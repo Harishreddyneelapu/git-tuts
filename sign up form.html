@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>sign up forms</title>
+        <link rel="stylesheet" type="text/css" href="form.css">
+    </head>
+    <body>
+        <h2>SIGN UP FORM</h2>
+        <form action="response.html">
+            <table>
+                <tr><td><label>Name:</label></td><td><input type="text" name="name" size="30" required><p>Enter your Name</p></td></tr>
+                <tr><td><label>College:</label></td><td><input type="text" name="col" size="30" disabled></td></tr>
+                <tr><td><label>Primary-Email:</label></td><td><input type="email" name="pmail" size="30" required><p>Enter your email</p>
+                    <img class="valid" src="check.png" width="20" height="20">
+                    <img class="invalid" src="warning.jpg" width="20" height="20"></td></tr>
+                <tr><td><label>Secondary-Email:</label></td><td><input type="email" name="smail" size="30"><p>Enter your optional email</p>
+                    <img class="valid" src="check.png" width="20" height="20">
+                    <img class="invalid" src="warning.jpg" width="20" height="20"></td></tr>
+                <tr><td><label>Password:</label></td><td><input type="password" name="pswd" size="30" required><p>Enter your password</p></td></tr>
+                <tr><td><label>Gender:</label></td><td><input type="radio" name="gender" value="M" checked>
+                    <label>Male</label>
+                    <input type="radio" name="gender" value="F">
+                    <label>Female</label>
+                    <input type="radio" name="gender" value="O">
+                    <label>Other</label></td></tr>
+                <tr><td><label>Age:</label></td><td><input type="number" name="age" min="18" max="100" value="18" required><p>Enter your age</p>
+                    <img class="valid" src="check.png" width="20" height="20">
+                    <img class="invalid" src="warning.jpg" width="20" height="20"></td></tr>
+                <tr><td><label>MOD:</label></td><td><input type="text" name="mod" value="Online" size="30" readonly><p>Only online mode avaliable due to covid</p></td></tr>
+                <tr><td><input type="submit" name="submit" required></td></tr>
+            </table> 
+        </form>
+    </body>
+</html>
